@@ -5,18 +5,20 @@ providers:
     directory: ./domains
     enforce_order: false
 
-  digitalocean:
-    class: octodns_digitalocean.DigitalOceanProvider
-    token: env/DIGITALOCEAN_TOKEN
+  cloudflare:
+    class: octodns_cloudflare.CloudflareProvider
+    email: env/CLOUDFLARE_GLOBAL_EMAIL
+    token: env/CLOUDFLARE_GLOBAL_KEY
+
 zones:
   austinhams.org.:
     sources:
       - config
     targets:
-      - digitalocean
+      - cloudflare
 
   tcares.org.:
     sources:
       - config
     targets:
-      - digitalocean
+      - cloudflare
