@@ -6,7 +6,7 @@ on:
       - main
     paths-ignore:
       - '.devcontainer/**'
-      - '.github/**'
+      - '.github/CODEWONERS'
       - 'README.md'
 
   workflow_dispatch:
