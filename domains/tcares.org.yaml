@@ -1,125 +1,64 @@
 ---
 # Root domain records
 '':
-  - ttl: 1
+  - ttl: 300
     type: A
     value: 104.199.117.69
 
-  - ttl: 1
+  - ttl: 300
     type: MX
     value:
       exchange: tcares-org.mail.protection.outlook.com.
       preference: 0
 
-  - ttl: 1
+  - ttl: 300
     type: TXT
     values:
       - "v=spf1 include:spf.protection.outlook.com include:netblocks.dreamhost.com include:relay.mailchannels.net -all"
       - "MS=ms77432800"
 
-# CNAME Records
-a:
-  ttl: 1
-  type: CNAME
-  value: tcares.wpengine.com.
-
 autodiscover:
-  ttl: 1
+  ttl: 300
   type: CNAME
   value: autodiscover.outlook.com.
 
-_domainconnect:
-  ttl: 1
-  type: CNAME
-  value: _domainconnect.gd.domaincontrol.com.
-
-email:
-  ttl: 1
-  type: CNAME
-  value: email.secureserver.net.
-
 enterpriseenrollment:
-  ttl: 1
+  ttl: 300
   type: CNAME
   value: enterpriseenrollment-s.manage.microsoft.com.
 
 enterpriseregistration:
-  ttl: 1
+  ttl: 300
   type: CNAME
   value: enterpriseregistration.windows.net.
 
-e:
-  ttl: 1
-  type: CNAME
-  value: email.secureserver.net.
-
-ftp:
-  ttl: 1
-  type: CNAME
-  value: tcares.org.
-
-imap:
-  ttl: 1
-  type: CNAME
-  value: imap.secureserver.net.
-
-mail:
-  ttl: 1
-  type: CNAME
-  value: pop.secureserver.net.
-
-mobilemail:
-  ttl: 1
-  type: CNAME
-  value: mobilemail-v01.prod.mesa1.secureserver.net.
-
-pda:
-  ttl: 1
-  type: CNAME
-  value: mobilemail-v01.prod.mesa1.secureserver.net.
-
 pm-bounces:
-  ttl: 1
+  ttl: 300
   type: CNAME
   value: pm.mtasv.net.
 
-pop:
-  ttl: 1
-  type: CNAME
-  value: pop.secureserver.net.
-
 selector1._domainkey:
-  ttl: 1
+  ttl: 300
   type: CNAME
   value: selector1-tcares-org._domainkey.travisares.e-v1.dkim.mail.microsoft.
 
 selector2._domainkey:
-  ttl: 1
+  ttl: 300
   type: CNAME
   value: selector2-tcares-org._domainkey.travisares.e-v1.dkim.mail.microsoft.
 
-smtp:
-  ttl: 1
-  type: CNAME
-  value: smtp.secureserver.net.
-
-webmail:
-  ttl: 1
-  type: CNAME
-  value: webmail.secureserver.net.
-
 www:
-  ttl: 1
+  ttl: 300
   type: CNAME
   value: tcares.org.
 
 # TXT Records
 20250823160551pm._domainkey:
-  ttl: 1
+  ttl: 300
   type: TXT
   value: "k=rsa;p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDJ41HQ4uqCy5jOeKlE1PbgmwPlZyXNWtrkZt7pY5P1E4nKIOt8YKRmbzeGBJ37rQnDg2b+EwgXtV3r63CwQtQ+2x8LyNlF/Gdr3OtkfP4+uMJRnbz2N86zhOkG7kJ8t9OaBviTfNXnB1pzadrgaQVhqXSC8VB+tIKakLkF10ruFwIDAQAB"
 
 _dmarc:
-  ttl: 1
+  ttl: 300
   type: TXT
   value: "v=DMARC1; p=none; pct=100; rua=mailto:re+yyqjni9b9bi@dmarc.postmarkapp.com; sp=none; aspf=r;"

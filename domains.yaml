@@ -11,11 +11,11 @@ providers:
     token: env/CLOUDFLARE_GLOBAL_KEY
 
 zones:
-  austinhams.org.:
-    sources:
-      - config
-    targets:
-      - cloudflare
+  # austinhams.org.:
+  #   sources:
+  #     - config
+  #   targets:
+  #     - cloudflare
 
   tcares.org.:
     sources:
