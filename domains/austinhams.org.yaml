@@ -13,42 +13,42 @@
       exchange: smtp.google.com.
       preference: 1
 
-  - ttl: 1
+  - ttl: 3600
     type: TXT
     values:
       - "v=spf1 include:_spf.google.com include:relay.mailchannels.net ~all"
       - "google-site-verification=fZxBykUr0rxPNti9hmxd5qF4xD7YnLHouyHFtkUMpqg"
 
 cdn:
-  ttl: 300
+  ttl: 3600
   type: A
   value: 50.116.16.160
 
 default._domainkey:
-  ttl: 300
+  ttl: 3600
   type: CNAME
   value: dkim.wildapricot.org.
 
 _domainconnect:
-  ttl: 300
+  ttl: 3600
   type: CNAME
   value: _domainconnect.gd.domaincontrol.com.
 
-e:
-  ttl: 300
-  type: CNAME
-  value: sites.wildapricot.org.
+# e:
+#   ttl: 3600
+#   type: CNAME
+#   value: sites.wildapricot.org.
 
-ftp:
-  ttl: 300
-  type: CNAME
-  value: austinhams.org.
+# ftp:
+#   ttl: 3600
+#   type: CNAME
+#   value: austinhams.org.
 
 www:
   octodns:
     cloudflare:
       proxied: true
-  # ttl: 300
+  # ttl: 3600
   type: CNAME
   value: austinhams.org.
 
@@ -58,6 +58,6 @@ _dmarc:
   value: v=DMARC1\; p=none\; pct=100\; rua=mailto:re+ryodupr8ivf@dmarc.postmarkapp.com\; sp=none\; aspf=r\;
 
 google._domainkey:
-  ttl: 300
+  ttl: 3600
   type: TXT
   value: v=DKIM1\; k=rsa\; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnuCMQk7eH/bjNIOf1F0Ce7/HjBqAYUJzfrPwe81t9YKXalZ2bVZhSEqOMqB4jurc3EJIkp9pZLHqrwbr1iZYkVkzISvXjd2Iu+KNt76PGv0a2WW5a8V3y5+UqTRrbhuCMbNI4LwE7W3DuAlGAmXkVfvnzIcBRTmV7h9zE2gMtfKQG3T8zXBC6WMROZ674syWhsIPsKVhys39Y9YWy/gy6L2bLqOetBSxKNaTasGvfb4inJuppLcOQM0BCkri/Uco6DeeukVYmpc22LvV/RB0//CptuJuIQcZ8O481vMxLNRKbLPcn+4AlIf3rxG+lKLbQo8cB74jUO8pDGiVf46pywIDAQAB
