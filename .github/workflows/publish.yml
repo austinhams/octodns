@@ -29,3 +29,4 @@ jobs:
         with:
           config_path: domains.yaml
           doit: '--doit'
+          force: 'Yes'
