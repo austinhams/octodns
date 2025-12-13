@@ -56,9 +56,9 @@ www:
 20250823160551pm._domainkey:
   ttl: 300
   type: TXT
-  value: "k=rsa;p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDJ41HQ4uqCy5jOeKlE1PbgmwPlZyXNWtrkZt7pY5P1E4nKIOt8YKRmbzeGBJ37rQnDg2b+EwgXtV3r63CwQtQ+2x8LyNlF/Gdr3OtkfP4+uMJRnbz2N86zhOkG7kJ8t9OaBviTfNXnB1pzadrgaQVhqXSC8VB+tIKakLkF10ruFwIDAQAB"
+  value: k=rsa\;p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDJ41HQ4uqCy5jOeKlE1PbgmwPlZyXNWtrkZt7pY5P1E4nKIOt8YKRmbzeGBJ37rQnDg2b+EwgXtV3r63CwQtQ+2x8LyNlF/Gdr3OtkfP4+uMJRnbz2N86zhOkG7kJ8t9OaBviTfNXnB1pzadrgaQVhqXSC8VB+tIKakLkF10ruFwIDAQAB
 
 _dmarc:
   ttl: 300
   type: TXT
-  value: "v=DMARC1; p=none; pct=100; rua=mailto:re+yyqjni9b9bi@dmarc.postmarkapp.com; sp=none; aspf=r;"
+  value: v=DMARC1\; p=none\; pct=100\; rua=mailto:re+yyqjni9b9bi@dmarc.postmarkapp.com\; sp=none\; aspf=r\;
