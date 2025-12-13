@@ -1,6 +1,9 @@
 ---
 '':
-  - ttl: 300
+  - octodns:
+      cloudflare:
+        proxied: true
+    # ttl: 300
     type: A
     value: 104.199.117.69
 
@@ -47,7 +50,10 @@ selector2._domainkey:
   value: selector2-tcares-org._domainkey.travisares.e-v1.dkim.mail.microsoft.
 
 www:
-  ttl: 300
+  octodns:
+    cloudflare:
+      proxied: true
+  # ttl: 300
   type: CNAME
   value: tcares.org.
 
