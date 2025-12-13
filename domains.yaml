@@ -7,8 +7,7 @@ providers:
 
   cloudflare:
     class: octodns_cloudflare.CloudflareProvider
-    email: env/CLOUDFLARE_GLOBAL_EMAIL
-    token: env/CLOUDFLARE_GLOBAL_KEY
+    token: env/CLOUDFLARE_API_TOKEN
 
 zones:
   # austinhams.org.:
