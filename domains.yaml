@@ -10,11 +10,11 @@ providers:
     token: env/CLOUDFLARE_API_TOKEN
 
 zones:
-  # austinhams.org.:
-  #   sources:
-  #     - config
-  #   targets:
-  #     - cloudflare
+  austinhams.org.:
+    sources:
+      - config
+    targets:
+      - cloudflare
 
   tcares.org.:
     sources:
