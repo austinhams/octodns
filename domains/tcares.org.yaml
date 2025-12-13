@@ -1,5 +1,4 @@
 ---
-# Root domain records
 '':
   - ttl: 300
     type: A
@@ -52,7 +51,6 @@ www:
   type: CNAME
   value: tcares.org.
 
-# TXT Records
 20250823160551pm._domainkey:
   ttl: 300
   type: TXT
