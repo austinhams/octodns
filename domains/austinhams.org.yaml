@@ -63,6 +63,6 @@ google._domainkey:
   value: v=DKIM1\; k=rsa\; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnuCMQk7eH/bjNIOf1F0Ce7/HjBqAYUJzfrPwe81t9YKXalZ2bVZhSEqOMqB4jurc3EJIkp9pZLHqrwbr1iZYkVkzISvXjd2Iu+KNt76PGv0a2WW5a8V3y5+UqTRrbhuCMbNI4LwE7W3DuAlGAmXkVfvnzIcBRTmV7h9zE2gMtfKQG3T8zXBC6WMROZ674syWhsIPsKVhys39Y9YWy/gy6L2bLqOetBSxKNaTasGvfb4inJuppLcOQM0BCkri/Uco6DeeukVYmpc22LvV/RB0//CptuJuIQcZ8O481vMxLNRKbLPcn+4AlIf3rxG+lKLbQo8cB74jUO8pDGiVf46pywIDAQAB
 
 grants:
-  ttl:
+  ttl: 300
   type: CNAME
   value: 9d0h8v9a.up.railway.app.
