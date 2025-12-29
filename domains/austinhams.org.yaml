@@ -19,10 +19,20 @@
       - "v=spf1 include:_spf.google.com include:relay.mailchannels.net ~all"
       - "google-site-verification=fZxBykUr0rxPNti9hmxd5qF4xD7YnLHouyHFtkUMpqg"
 
-cdn:
+# cdn:
+#   ttl: 3600
+#   type: A
+#   value: 50.116.16.160
+
+20251229020747pm._domainkey:
   ttl: 3600
-  type: A
-  value: 50.116.16.160
+  type: TXT
+  value: k=rsa\; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC81EhqyiK3o4YtwpwQtB5+CcwbsLDPrtv5FbAw643jktlqLA5z/hFYm6I1Kd09vtRp1N1Takgt0xVXFWvvRJaJBFUlG+d6S12xxG8RXGV6qaxVLlgjCXFJ0S4J4sRptMQfBq16vidS/gHd4SxcWwmDzw2mtxc39/H9A6OHaawevwIDAQAB
+
+pm-bounces:
+  ttl: 3600
+  type: CNAME
+  value: pm.mtasv.net.
 
 default._domainkey:
   ttl: 3600
@@ -63,6 +73,9 @@ google._domainkey:
   value: v=DKIM1\; k=rsa\; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnuCMQk7eH/bjNIOf1F0Ce7/HjBqAYUJzfrPwe81t9YKXalZ2bVZhSEqOMqB4jurc3EJIkp9pZLHqrwbr1iZYkVkzISvXjd2Iu+KNt76PGv0a2WW5a8V3y5+UqTRrbhuCMbNI4LwE7W3DuAlGAmXkVfvnzIcBRTmV7h9zE2gMtfKQG3T8zXBC6WMROZ674syWhsIPsKVhys39Y9YWy/gy6L2bLqOetBSxKNaTasGvfb4inJuppLcOQM0BCkri/Uco6DeeukVYmpc22LvV/RB0//CptuJuIQcZ8O481vMxLNRKbLPcn+4AlIf3rxG+lKLbQo8cB74jUO8pDGiVf46pywIDAQAB
 
 grants:
-  ttl: 300
+  octodns:
+    cloudflare:
+      proxied: true
+  # ttl: 300    
   type: CNAME
   value: 9d0h8v9a.up.railway.app.
