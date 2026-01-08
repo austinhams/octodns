@@ -10,9 +10,11 @@
   - ttl: 300
     type: MX
     value:
-      exchange: tcares-org.mail.protection.outlook.com.
-      preference: 0
-
+      # exchange: tcares-org.mail.protection.outlook.com.
+      # preference: 0
+      exchange: SMTP.GOOGLE.COM.
+      preference: 1
+  
   - ttl: 300
     type: TXT
     values:
