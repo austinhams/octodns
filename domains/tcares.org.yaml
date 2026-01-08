@@ -22,6 +22,11 @@
       - "MS=ms77432800"
       - "google-site-verification=V3PLx99zgG4MUtbTW8i7oYJpOv7-eh3Q1b3NvICNTKc"
 
+google._domainkey:
+  ttl: 300
+  type: TXT
+  value: v=DKIM1\;k=rsa\;p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAps6R3ddS+pe9RJBNYQ0TVAplJAClVhAarPYUYmbGHg4bJoCwcNIoSlNs6ZZ7kEBf/E1/6c2uexhFlKdknEfBWc2lBDBa3VuPbx77M0RtsC6jHGbcfhgEsWIAg5vY8FBZXcQbbIBDswvMYgca9b3ZX7gjKZuCFscw2Hyurkj1anElTGUxbk9M9U7lJhwk8dKztvKTAtg6L28ChSz5Q0EXL1VFHMX/5ny6NMlH3qN+3N0rnLsT4Ax3zZF5Gwf/KXELanDTkKEY4PAQ2tk2I328b7QU7/hbgh6u3L5EW6iMmzqS0rMhFCaUM8Lmhg4O8zLc8FGWNJep71/1Jcyg/DrleQIDAQAB
+
 autodiscover:
   ttl: 300
   type: CNAME
