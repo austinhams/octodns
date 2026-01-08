@@ -18,7 +18,7 @@
   - ttl: 300
     type: TXT
     values:
-      - "v=spf1 include:spf.protection.outlook.com include:netblocks.dreamhost.com include:relay.mailchannels.net -all"
+      - "v=spf1 include:_spf.google.com include:spf.protection.outlook.com include:netblocks.dreamhost.com include:relay.mailchannels.net -all"
       - "MS=ms77432800"
       - "google-site-verification=V3PLx99zgG4MUtbTW8i7oYJpOv7-eh3Q1b3NvICNTKc"
 
