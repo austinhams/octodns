@@ -55,6 +55,11 @@ _domainconnect:
 #   type: CNAME
 #   value: austinhams.org.
 
+fdlogger:
+  ttl: 300
+  type: A
+  value: 24.199.112.108
+
 www:
   octodns:
     cloudflare:
